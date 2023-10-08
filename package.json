@@ -1,0 +1,29 @@
+{
+  "name": "jsdoc_tutorial",
+  "version": "1.0.0",
+  "description": "Beginners starting point to learn jsdoc",
+  "main": "src/jsdoc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Complexlity/jsdoc.git"
+  },
+  "keywords": [
+    "[jsdoc",
+    "ts-doc]"
+  ],
+  "author": "https://complexlity.vercel.app",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Complexlity/jsdoc-tutorial/issues"
+  },
+  "homepage": "https://github.com/Complexlity/jsdoc-tutorial#readme",
+  "scripts": {
+    "jsdoc": "jsdoc src",
+    "tsdoc": "jsdoc -t node_modules/tsd-jsdoc/dist -r src",
+    "compile": "npm run jsdoc && npm run tsdoc"
+  },
+  "dependencies": {
+    "jsdoc": "^3.6.3",
+    "tsd-jsdoc": "^2.5.0"
+  }
+}
